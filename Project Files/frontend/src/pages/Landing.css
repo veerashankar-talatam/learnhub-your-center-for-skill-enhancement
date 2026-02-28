@@ -1,0 +1,81 @@
+body {
+  scroll-behavior: smooth;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+  color: white;
+}
+
+.brand {
+  font-size: 90px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  background: linear-gradient(45deg, #ffc107, #ff9800);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.typing-text {
+  margin-top: 15px;
+  font-size: 30px;
+  min-height: 40px;
+  border-right: 3px solid #ffc107;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.hero-illustration img {
+  width: 400px;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* FEATURES */
+.features {
+  padding: 100px 0;
+}
+
+.feature-card {
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  color: #333;
+  transition: 0.4s;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.feature-card:hover {
+  transform: translateY(-15px);
+  background: #fff;
+}
+
+/* FOOTER */
+.footer {
+  background: #111;
+  color: white;
+  padding: 20px;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
